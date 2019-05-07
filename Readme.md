@@ -1,7 +1,7 @@
 # Личный проект «Девайс»
 
 * Студент: [Alexey Pasmarnov](https://up.htmlacademy.ru/htmlcss/25/user/972473).
-* Наставник: `Дмитрий Мирошниченко`.
+* Наставник: [Дмитрий Мирошниченко] (https://up.htmlacademy.ru/htmlcss/25/user/591417).
 
 ---
 
