@@ -98,9 +98,9 @@
   <section class="services-slider">
     <h2 class="visually-hidden">Сервисы</h2>
     <ul class="services-list">
-      <li>Доставка</li>
-      <li>Гарантия</li>
-      <li>Кредит</li>
+      <li><button type="button" class="service-button-delivery">Доставка</button></li>
+      <li><button type="button" class="service-button-warranty">Гарантия</button></li>
+      <li><button type="button" class="service-button-credit">Кредит</button></li>
     </ul>
     <ul class="services-description">
       <li class="service-description-delivery">
@@ -108,27 +108,36 @@
         <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо
           заработаем,
           поднимая его на ваш этаж.</p>
+        <p>
+          <img src="img/delivery.svg" width="136" height="164" alt="Сервис доставки">
+        </p>
       </li>
       <li class="service-description-warranty">
         <h3>Гарантия</h3>
         <p>Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый.
           Товар, не дом, конечно же.</p>
+        <p>
+          <img src="img/warranty.svg" width="171" height="195" alt="Гарантия">
+        </p>
       </li>
       <li class="service-description-credit">
         <h3>Кредит</h3>
         <p>Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные
           условия кредита. Выгодные для нашего банка, разумеется.</p>
+        <p>
+          <img src="img/credit.svg" width="156" height="188" alt="Кредитование покупки">
+        </p>
       </li>
     </ul>
   </section>
   <section class="brands">
     <ul class="brands-list">
       <li><a href="#"><img src="img/logo-1-jpg.jpg" width="260" height="100"
-                                              alt="Brand «DJI»"></a></li>
+                           alt="Brand «DJI»"></a></li>
       <li><a href="#"><img src="img/logo-2-jpg.jpg" width="260" height="100"
-                                                     alt="Brand «SP GADGETS»"></a></li>
+                           alt="Brand «SP GADGETS»"></a></li>
       <li><a href="#"><img src="img/logo-3-jpg.jpg" width="260" height="100"
-                                                alt="Brand «GoPro»"></a></li>
+                           alt="Brand «GoPro»"></a></li>
       <li><a href="#"><img src="img/logo-4-jpg.jpg" width="260" height="100" alt="Brand «VIVE»"></a>
       </li>
     </ul>
@@ -165,9 +174,9 @@
     <ul class="footer-user-navigation">
       <li class="login-link">Войти</li>
     </ul>
-    <p class="footer-compare-link"><a href="#">Сравнить</a></p>
-    <ul class="footer-shopping-cart-navigation">
-      <li class="shopping-cart-link">Корзина</li>
+    <ul class="shopping-cart-navigation">
+      <li class="shopping-cart-link"><a href="#">Корзина</a></li>
+      <li class="compare-link"><a href="#">Сравнить</a></li>
     </ul>
   </div>
   <div>
@@ -192,5 +201,35 @@
       alt="HTML Academy"></a>
   </div>
 </footer>
+<section class="modal-contact-form">
+  <h2 class="visually-hidden">Контактная форма</h2>
+  <form action="https://echo.htmlacademy.ru" class="contact-form" method="post" name="contact-form">
+    <p>
+      <label for="contact-form-name">Ваше имя:</label>
+      <input type="text" name="form-name" id="contact-form-name" class="modal-contact-form-name" value=""
+             placeholder="Имя Фамилия">
+    </p>
+    <p>
+      <label for="contact-form-email">Ваш email:</label>
+      <input type="email" name="form-email" id="contact-form-email" class="modal-contact-form-email" value=""
+             placeholder="email@example.com">
+    </p>
+    <p>
+      <label for="contact-form-text">Текст письма:</label>
+      <textarea name="form-text" id="contact-form-text" cols="60" rows="10" class="modal-contact-form-text"
+                placeholder="В свободной форме">
+      </textarea>
+    </p>
+    <button type="submit" class="button">Отправить</button>
+  </form>
+</section>
+<section class="modal modal-map">
+  <h2 class="visually-hidden">Как до нас добраться</h2>
+  <p>
+    <img src="img/map-big-jpg.jpg" width="960" height="559"
+         alt="Офис компании по адресу: г. Москва, ул. Строителей, 15">
+  </p>
+  <button type="button" class="modal-close">Закрыть</button>
+</section>
 </body>
 </html>
