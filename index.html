@@ -11,7 +11,8 @@
     <li>
       <form action="https://echo.htmlacademy.ru" method="get" class="site-search-form" name="search-form">
         <label for="search-form-field">Поиск по сайту</label>
-        <input type="search" class="site-search-form-field" name="search-field" id="search-form-field">
+        <input type="search" class="site-search-form-field" name="search-field" id="search-form-field"
+               placeholder="Поиск по сайту">
         <button type="submit" class="search-button">Найти</button>
       </form>
     </li>
@@ -177,7 +178,7 @@
 </main>
 <footer class="main-footer">
   <div>
-    <a class="footer-logo" aria-label="Интернет магазин «Device»">
+    <a class="footer-logo">
       <img src="img/device.svg" width="163" height="35" alt="Логотип интернет магазина «Device»">
     </a>
     <ul class="footer-user-navigation">
@@ -205,9 +206,10 @@
         <li><a class="social-button" href="#">Твитер</a></li>
       </ul>
     </div>
-    <a class="footer-copyright" href="https://htmlacademy.ru/intensive/htmlcss" target="_blank"><img
-      src="img/logo-htmlacademy.svg" width="27" height="34" aria-label="Логотип бренда компании «HTML Academy»"
-      alt="HTML Academy">
+    <a class="footer-copyright" href="https://htmlacademy.ru/intensive/htmlcss" target="_blank">
+      <span class="visually-hidden">Перейти на сайт разработчика «HTML Academy»</span>
+      <img src="img/logo-htmlacademy.svg" width="27" height="34" aria-label=""
+           alt="HTML Academy">
     </a>
   </div>
 </footer>
@@ -232,7 +234,7 @@
     </p>
     <button type="submit" class="button">Отправить</button>
   </form>
-  <button type="button" class="modal-close">Закрыть</button>
+  <button type="reset" class="modal-close">Закрыть</button>
 </section>
 <section class="modal modal-map">
   <h2 class="visually-hidden">Как до нас добраться</h2>

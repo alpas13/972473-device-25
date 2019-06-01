@@ -11,7 +11,8 @@
     <li>
       <form action="https://echo.htmlacademy.ru" method="get" class="site-search-form" name="search-form">
         <label for="search-form-field">Поиск по сайту</label>
-        <input type="search" class="site-search-form-field" name="search-field" id="search-form-field">
+        <input type="search" class="site-search-form-field" name="search-field" id="search-form-field"
+               placeholder="Поиск по сайту">
         <button type="submit" class="search-button">Найти</button>
       </form>
     </li>
@@ -25,7 +26,8 @@
     <li class="compare-link"><a href="#">Сравнить</a></li>
   </ul>
   <nav class="main-navigation">
-    <a class="logo" href="index.html" aria-label="Интернет магазин «Device»">
+    <a class="logo" href="index.html">
+      <span class="visually-hidden">Перейти на главную страницу</span>
       <img src="img/device.svg" width="163" height="35" alt="Логотип интернет магазина «Device»">
     </a>
     <ul class="site-navigation">
@@ -57,40 +59,26 @@
     <p class="main-filter-caption">
       <b>Фильтр:</b>
     </p>
-    <form action="https://echo.htmlacademy.ru" class="main-filter-form" name="main-filter-form" method="get">
+    <form action="https://echo.htmlacademy.ru" class="main-filter-form" name="main-filter-form" method="post">
       <fieldset>
         <legend>Цвет</legend>
-        <label>
-          <input type="checkbox" name="checkbox-color-black" value="black" checked>
-          Черный
-        </label>
-        <label>
-          <input type="checkbox" name="checkbox-color-white" value="white">
-          Белый
-        </label>
-        <label>
-          <input type="checkbox" name="checkbox-color-blue" value="blue" checked>
-          Синий
-        </label>
-        <label>
-          <input type="checkbox" name="checkbox-color-red" value="red" checked>
-          Красный
-        </label>
-        <label>
-          <input type="checkbox" name="checkbox-color-pink" value="pink">
-          Розовый
-        </label>
+        <label for="checkbox-black">Черный</label>
+        <input type="checkbox" name="checkbox-color-black" value="black" id="checkbox-black" checked>
+        <label for="checkbox-white">Белый</label>
+        <input type="checkbox" name="checkbox-color-white" value="white" id="checkbox-white">
+        <label for="checkbox-blue">Синий</label>
+        <input type="checkbox" name="checkbox-color-blue" value="blue" id="checkbox-blue" checked>
+        <label for="checkbox-red">Красный</label>
+        <input type="checkbox" name="checkbox-color-red" value="red" id="checkbox-red" checked>
+        <label for="checkbox-pink">Розовый</label>
+        <input type="checkbox" name="checkbox-color-pink" value="pink" id="checkbox-pink">
       </fieldset>
       <fieldset>
         <legend>Bluetooth</legend>
-        <label>
-          <input type="radio" name="Bluetooth" value="yes" checked>
-          Есть
-        </label>
-        <label>
-          <input type="radio" name="Bluetooth" value="no">
-          Нет
-        </label>
+        <label for="bluetooth-yes">Есть</label>
+        <input type="radio" name="Bluetooth" value="yes" id="bluetooth-yes" checked>
+        <label for="bluetooth-no">Нет</label>
+        <input type="radio" name="Bluetooth" value="no" id="bluetooth-no">
       </fieldset>
       <button type="submit" class="button">Показать</button>
     </form>
@@ -197,9 +185,10 @@
         <li><a class="social-button" href="#">Твитер</a></li>
       </ul>
     </div>
-    <a class="footer-copyright" href="https://htmlacademy.ru/intensive/htmlcss" target="_blank"><img
-      src="img/logo-htmlacademy.svg" width="27" height="34" aria-label="Логотип бренда компании «HTML Academy»"
-      alt="HTML Academy">
+    <a class="footer-copyright" href="https://htmlacademy.ru/intensive/htmlcss" target="_blank">
+      <span class="visually-hidden">Перейти на сайт разработчика «HTML Academy»</span>
+      <img src="img/logo-htmlacademy.svg" width="27" height="34" aria-label=""
+           alt="HTML Academy">
     </a>
   </div>
 </footer>
