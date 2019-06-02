@@ -3,6 +3,8 @@
 <head>
   <meta charset="utf-8">
   <title>Каталог товаров интернет магазина электронных устройств «Device»</title>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
 <header class="main-header">
@@ -17,33 +19,33 @@
       </form>
     </li>
   </ul>
-  <ul class="user-navigation">
+  <div class="header-user-menu">
+  <ul>
     <li class="user-authorization"><a href="#">Валентин Петухов</a></li>
     <li class="login-logout"><a href="#">Выйти</a></li>
-  </ul>
-  <ul class="shopping-cart-navigation">
     <li class="shopping-cart-link"><a href="#">Корзина</a></li>
     <li class="compare-link"><a href="#">Сравнить</a></li>
   </ul>
+  </div>
   <nav class="main-navigation">
     <a class="logo" href="index.html">
       <span class="visually-hidden">Перейти на главную страницу</span>
       <img src="img/device.svg" width="163" height="35" alt="Логотип интернет магазина «Device»">
     </a>
     <ul class="site-navigation">
-      <li class="site-navigation-catalog"><a href="#">Каталог товаров</a>
-        <ul class="site-navigation-catalog-list">
-          <li><a href="">Виртуальная реальность</a></li>
-          <li><a href="">Моноподы для селфи</a></li>
-          <li><a href="">Экшн-камеры</a></li>
-          <li><a href="">Фитнес-браслеты</a></li>
-          <li><a href="">Умные часы</a></li>
-          <li><a href="">Квадрокоптеры</a></li>
+      <li class="navigation-catalog"><a href="#">Каталог товаров</a>
+        <ul class="navigation-catalog-list">
+          <li><a href="#">Виртуальная реальность</a></li>
+          <li><a href="#">Моноподы для селфи</a></li>
+          <li><a href="#">Экшн-камеры</a></li>
+          <li><a href="#">Фитнес-браслеты</a></li>
+          <li><a href="#">Умные часы</a></li>
+          <li><a href="#">Квадрокоптеры</a></li>
         </ul>
       </li>
-      <li class="site-navigation-delivery"><a href="#">Доставка</a></li>
-      <li class="site-navigation-warranty"><a href="#">Гарантия</a></li>
-      <li class="site-navigation-contacts"><a href="#">Контакты</a></li>
+      <li class="navigation-delivery"><a href="#">Доставка</a></li>
+      <li class="navigation-warranty"><a href="#">Гарантия</a></li>
+      <li class="navigation-contacts"><a href="#">Контакты</a></li>
     </ul>
   </nav>
 </header>
@@ -56,10 +58,10 @@
   </ul>
   <section class="main-filter">
     <h2 class="visually-hidden">Фильтр по каталогу</h2>
-    <p class="main-filter-caption">
-      <b>Фильтр:</b>
+    <p class="filter-caption">
+      Фильтр:
     </p>
-    <form action="https://echo.htmlacademy.ru" class="main-filter-form" name="main-filter-form" method="post">
+    <form action="https://echo.htmlacademy.ru" class="filter-form" name="main-filter-form" method="post">
       <fieldset>
         <legend>Цвет</legend>
         <label for="checkbox-black">Черный</label>
@@ -94,8 +96,8 @@
           <p>
             <img src="img/item-1-jpg.jpg" width="360" height="380" alt="Любительская селфи-палка">
           </p>
-          <a class="catalog-item-image-button" href="#">В корзину</a>
-          <a class="catalog-item-image-add-to-compare" href="#">Добавить к сравнению</a>
+          <a class="catalog-item-button" href="#">В корзину</a>
+          <a class="catalog-item-compare" href="#">Добавить к сравнению</a>
         </div>
         <p>500 руб</p>
       </li>
@@ -108,8 +110,8 @@
             <img src="img/item-2-jpg.jpg" width="360" height="380"
                  alt="Профессиональная селфи-палка">
           </p>
-          <a class="catalog-item-image-button" href="#">В корзину</a>
-          <a class="catalog-item-image-add-to-compare" href="#">Добавить к сравнению</a>
+          <a class="catalog-item-button" href="#">В корзину</a>
+          <a class="catalog-item-compare" href="#">Добавить к сравнению</a>
         </div>
         <p>1500 руб</p>
       </li>
@@ -122,8 +124,8 @@
             <img src="img/item-3-jpg.jpg" width="360" height="380"
                  alt="Непотопляемая селфи-палка">
           </p>
-          <a class="catalog-item-image-button" href="#">В корзину</a>
-          <a class="catalog-item-image-add-to-compare" href="#">Добавить к сравнению</a>
+          <a class="catalog-item-button" href="#">В корзину</a>
+          <a class="catalog-item-compare" href="#">Добавить к сравнению</a>
         </div>
         <p>2500 руб</p>
       </li>
@@ -136,15 +138,15 @@
             <img src="img/item-4-jpg.jpg" width="360" height="380"
                  alt="Селфи-палка «Следуй за мной»">
           </p>
-          <a class="catalog-item-image-button" href="#">В корзину</a>
-          <a class="catalog-item-image-add-to-compare" href="#">Добавить к сравнению</a>
+          <a class="catalog-item-button" href="#">В корзину</a>
+          <a class="catalog-item-compare" href="#">Добавить к сравнению</a>
         </div>
         <p>4900 руб</p>
       </li>
     </ul>
     <ul class="pagination-list">
       <li class="pagination-button">
-        <a class="pagination-button-back">Назад</a>
+        <a href="#" class="pagination-button-back">Назад</a>
       </li>
       <li class="pagination-item pagination-item-current"><a>1</a></li>
       <li class="pagination-item"><a href="#">2</a></li>
@@ -160,13 +162,13 @@
     <a class="footer-logo" href="index.html" aria-label="Интернет магазин «Device»">
       <img src="img/device.svg" width="163" height="35" alt="Логотип интернет магазина «Device»">
     </a>
-    <ul class="footer-user-navigation">
-      <li class="login-link"><a href="#">Выйти</a></li>
-    </ul>
-    <ul class="shopping-cart-navigation">
-      <li class="shopping-cart-link"><a href="#">Корзина</a></li>
-      <li class="compare-link"><a href="#">Сравнить</a></li>
-    </ul>
+    <div class="footer-user-menu">
+      <ul>
+        <li class="footer-login"><a href="#">Выйти</a></li>
+        <li class="footer-compare"><a href="#">Сравнить</a></li>
+        <li class="footer-shopping-cart"><a href="#">Корзина</a></li>
+      </ul>
+    </div>
   </div>
   <div>
     <p class="footer-address">г. Москва, ул. Строителей, 15</p>

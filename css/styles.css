@@ -1,0 +1,528 @@
+@font-face {
+  font-family: "Gilroy-ExtraBold";
+  src: local("Gilroy"),
+  url("../fonts/gilroyextrabold.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Gilroy-Light";
+  src: local("Gilroy"),
+  url("../fonts/gilroylight.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "OpenSans-Light";
+  src: local("OpenSans"),
+  url("../fonts/opensanslight.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "OpenSans";
+  src: local("OpenSans"),
+  url("../fonts/opensans.woff2") format("woff2");
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 30px;
+  font-family: "OpenSans-Light", "Arial", sans-serif;
+  color: #464646;
+  background-color: #ffffff;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+.main-header {
+  background-color: rgba(240, 197, 46, 0.5);
+}
+
+.site-search {
+  list-style: none;
+  color: #000000;
+  letter-spacing: 0.15px;
+}
+
+.site-search-placeholder {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.site-search-placeholder:hover {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.site-search input[type="search"] {
+  color: #000000;
+  background-color: transparent;
+  border: none;
+  border-bottom: 2px solid #000000;
+}
+
+.search-button {
+  font: inherit;
+  vertical-align: middle;
+  text-align: center;
+  color: #000000;
+  background-color: transparent;
+  border: 2px solid #000000;
+}
+
+.search-button:hover {
+  color: #ffffff;
+  background-color: #000000;
+}
+
+.search-button:active {
+  color: rgba(255, 255, 255, 0.3);
+  background-color: #000000;
+}
+
+.header-user-menu ul {
+  list-style: none;
+}
+
+.header-user-menu a {
+  color: #000000;
+}
+
+.header-user-menu a:hover {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.header-user-menu a:active {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.main-navigation a {
+  color: #000000;
+}
+
+.main-navigation ul {
+  list-style: none;
+}
+
+.main-navigation a:hover {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.main-navigation a:active {
+  color: rgba(0, 0, 0, 0.3);;
+}
+
+.site-navigation {
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 24px;
+  font-family: Gilroy-ExtraBold, Arial, sans-serif;
+  letter-spacing: 3.6px;
+}
+
+.navigation-catalog-list {
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 30px;
+  font-family: OpenSans-Light, Arial, sans-serif;
+  letter-spacing: 0.15px;
+}
+
+.catalog-section-list {
+  list-style: none;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 24px;
+  font-family: Gilroy-ExtraBold, Arial, sans-serif;
+  letter-spacing: 0.18px;
+}
+
+.catalog-section-item a {
+  color: #000000;
+}
+
+.catalog-section-item div {
+  background-color: rgba(240, 197, 46, 0.5);
+}
+
+.catalog-section-item div:hover {
+  background-color: rgba(240, 197, 46, 1);
+}
+
+.services-slider ul {
+  list-style: none;
+  background-color: #e5e5e5;
+}
+
+.services-list {
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 24px;
+  font-family: Gilroy-ExtraBold, Arial, sans-serif;
+  color: #000000;
+  letter-spacing: 3.6px;
+  border-right: 7px solid #000000;
+}
+
+.services-list button {
+  background-color: transparent;
+  border: none;
+}
+
+.services-list .current-item,
+.services-list .current-button {
+  color: #f7e184;
+  background-color: #000000;
+}
+
+.services-list button:hover:not (.current-button) {
+  background-color: #f0c52e;
+}
+
+.services-list li:active:not (.current-item),
+.services-list button:active:not (.current-button) {
+  color: #f7e184;
+  background-color: #000000;
+}
+
+.services-description h3 {
+  font-weight: 800;
+  font-size: 47px;
+  line-height: 48px;
+  font-family: Gilroy-ExtraBold, Arial, sans-serif;
+  color: #000000;
+  letter-spacing: 0.47px;
+}
+
+.brands-list {
+  list-style: none;
+  text-align: center;
+}
+
+.company-info h3 {
+  font-weight: 800;
+  font-size: 47px;
+  line-height: 48px;
+  font-family: Gilroy-ExtraBold, Arial, sans-serif;
+  color: #000000;
+  letter-spacing: 0.47px;
+}
+
+.about-us ul {
+  list-style: circle;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 30px;
+  font-family: OpenSans, Arial, sans-serif;
+  color: #464646;
+  letter-spacing: 0.15px;
+}
+
+.company-info .button {
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 24px;
+  font-family: Gilroy-ExtraBold, Arial, sans-serif;
+  color: #000000;
+  text-transform: uppercase;
+  letter-spacing: 3.6px;
+}
+
+.company-info .button:hover {
+  background-color: #f0c52e;
+}
+
+.company-info a:active,
+.company-info .button:active {
+  color: rgba(0, 0, 0, 0.3);
+  background-color: #f0c52e;
+}
+
+.main-footer {
+  color: #ffffff;
+  background-color: #464646;
+}
+
+.main-footer ul {
+  list-style: none;
+}
+
+.main-footer a {
+  color: #ffffff;
+}
+
+.footer-user-menu a {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.footer-user-menu a:hover {
+  color: rgba(255, 255, 255, 1);
+}
+
+.footer-user-menu a:active {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.footer-navigation {
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 24px;
+  font-family: Gilroy-ExtraBold, Arial, sans-serif;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 3.6px;
+}
+
+.footer-navigation a:hover {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.footer-navigation a:active {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.footer-social {
+  text-align: center;
+}
+
+.footer-social a {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.footer-social a:hover {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.footer-social a:active {
+  color: rgba(255, 255, 255, 0.1);
+}
+
+.modal-contact-form label {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+  font-family: Gilroy-ExtraBold, Arial, sans-serif;
+  background-color: #ffffff;
+}
+
+.modal-contact-form input,
+.modal-contact-form textarea {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  font-family: OpenSans, Arial, sans-serif;
+  color: #464646;
+  background-color: #f2f2f2;
+  border: none;
+}
+
+.modal-contact-form input:hover,
+.modal-contact-form textarea:hover {
+  background-color: #eaeaea;
+}
+
+.modal-contact-form input:focus,
+.modal-contact-form textarea:focus {
+  background-color: #ffffff;
+  border: 3px solid #f0c52e;
+  outline: none;
+}
+
+/*.modal-contact-form textarea:invalid,
+.modal-contact-form input:invalid {
+  background-color: #f6dada;
+}*/
+
+.modal-contact-form .button {
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 24px;
+  font-family: Gilroy-ExtraBold, Arial, sans-serif;
+  color: #000000;
+  text-transform: uppercase;
+  letter-spacing: 3.6px;
+  border: none;
+}
+
+.modal-contact-form .button:hover {
+  background-color: #f0c52e;
+}
+
+.modal-contact-form .button:active {
+  color: rgba(0, 0, 0, 0.3);
+  background-color: #f0c52e;
+}
+
+.container h1:not(.visually-hidden) {
+  font-weight: 800;
+  font-size: 47px;
+  line-height: 48px;
+  font-family: Gilroy-ExtraBold, Arial, sans-serif;
+  color: #000000;
+  letter-spacing: 0.47px;
+}
+
+.container ul {
+  list-style: none;
+}
+
+.container a {
+  color: #000000;
+  background-color: transparent;
+}
+
+.breadcrumbs a {
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 40px;
+  letter-spacing: 0.14px;
+  font-family: OpenSans-Light, Arial, sans-serif;
+  color: rgba(0, 0, 0, 0.3);
+  background-color: transparent;
+}
+
+.main-filter {
+  background-color: #ebebeb;
+}
+
+.filter-caption {
+  font-weight: 800;
+  font-size: 16px;
+  line-height: 24px;
+  font-family: Gilroy-ExtraBold, Arial, sans-serif;
+  color: #000000;
+  text-transform: uppercase;
+  letter-spacing: 3.2px;
+  background-color: #d9d9d9;
+}
+
+.filter-form legend {
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 24px;
+  font-family: Gilroy-ExtraBold, Arial, sans-serif;
+  color: #000000;
+  letter-spacing: 0.18px;
+  background-color: transparent;
+}
+
+.filter-form label {
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 40px;
+  letter-spacing: 0.14px;
+  font-family: OpenSans-Light, Arial, sans-serif;
+  color: #000000;
+  background-color: transparent;
+}
+
+.catalog-item-button,
+.filter-form button {
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 24px;
+  font-family: Gilroy-ExtraBold, Arial, sans-serif;
+  color: #000000;
+  text-transform: uppercase;
+  letter-spacing: 3.6px;
+  border: none;
+  background-color: transparent;
+}
+
+.catalog-item-button:hover,
+.filter-form .button:hover {
+  background-color: #f0c52e;
+}
+
+.filter-form .button:active {
+  color: rgba(0, 0, 0, 0.3);
+  background-color: #f0c52e;
+}
+
+.catalog-item h3 {
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 24px;
+  font-family: Gilroy-ExtraBold, Arial, sans-serif;
+  color: #000000;
+  letter-spacing: 0.18px;
+  background-color: transparent;
+}
+
+.catalog-item-image img {
+  background-color: #eeeeee;
+}
+
+.catalog-item-image img:hover {
+  opacity: 0.7;
+}
+
+a.catalog-item-compare {
+  font-weight: 300;
+  font-size: 13px;
+  line-height: 20px;
+  letter-spacing: 0.13px;
+  font-family: OpenSans-Light, Arial, sans-serif;
+  color: rgba(0, 0, 0, 0.5);
+  background-color: transparent;
+}
+
+.catalog-item p {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.16px;
+  font-family: OpenSans-Light, Arial, sans-serif;
+  color: #464646;
+  background-color: transparent;
+}
+
+.pagination-list {
+  font-weight: 800;
+  font-size: 16px;
+  line-height: 24px;
+  font-family: Gilroy-ExtraBold, Arial, sans-serif;
+  letter-spacing: 3.2px;
+  background-color: #ebebeb;
+}
+
+.pagination-button {
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.pagination-item a {
+  color: rgba(0, 0, 0, 0.3);
+  background-color: transparent;
+}
+
+.pagination-item-current a {
+  color: #000000;
+  background-color: transparent;
+}
+
+.pagination-button:hover {
+  background-color: #d9d9d9;
+}
+
+.pagination-button:active,
+.pagination-button a:active {
+  color: rgba(0, 0, 0, 0.3);
+  background-color: #d9d9d9;
+}
+
