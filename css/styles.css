@@ -1,25 +1,25 @@
 @font-face {
-  font-family: "Gilroy-ExtraBold";
+  font-family: "Gilroy";
   src: local("Gilroy"),
-  url("../fonts/gilroyextrabold.woff2") format("woff2");
+  url("../fonts/gilroyextrabold.woff2") format("woff2"), url("../fonts/gilroyextrabold.woff") format("woff");
 }
 
 @font-face {
-  font-family: "Gilroy-Light";
+  font-family: "Gilroy";
   src: local("Gilroy"),
-  url("../fonts/gilroylight.woff2") format("woff2");
-}
-
-@font-face {
-  font-family: "OpenSans-Light";
-  src: local("OpenSans"),
-  url("../fonts/opensanslight.woff2") format("woff2");
+  url("../fonts/gilroylight.woff2") format("woff2"), url("../fonts/gilroylight.woff") format("woff");
 }
 
 @font-face {
   font-family: "OpenSans";
   src: local("OpenSans"),
-  url("../fonts/opensans.woff2") format("woff2");
+  url("../fonts/opensanslight.woff2") format("woff2"), url("../fonts/opensanslight.woff") format("woff");
+}
+
+@font-face {
+  font-family: "OpenSans";
+  src: local("OpenSans"),
+  url("../fonts/opensans.woff2") format("woff2"), url("../fonts/opensans.woff") format("woff");
 }
 
 html {
@@ -38,7 +38,7 @@ body {
   font-weight: 300;
   font-size: 15px;
   line-height: 30px;
-  font-family: "OpenSans-Light", "Arial", sans-serif;
+  font-family: "OpenSans", "Arial", sans-serif;
   color: #464646;
   background-color: #ffffff;
 }
@@ -92,7 +92,6 @@ img {
 
 .search-button:active {
   color: rgba(255, 255, 255, 0.3);
-  background-color: #000000;
 }
 
 .header-user-menu ul {
@@ -131,7 +130,7 @@ img {
   font-weight: 800;
   font-size: 18px;
   line-height: 24px;
-  font-family: Gilroy-ExtraBold, Arial, sans-serif;
+  font-family: Gilroy, Arial, sans-serif;
   letter-spacing: 3.6px;
 }
 
@@ -139,7 +138,7 @@ img {
   font-weight: 300;
   font-size: 15px;
   line-height: 30px;
-  font-family: OpenSans-Light, Arial, sans-serif;
+  font-family: OpenSans, Arial, sans-serif;
   letter-spacing: 0.15px;
 }
 
@@ -148,7 +147,7 @@ img {
   font-weight: 800;
   font-size: 18px;
   line-height: 24px;
-  font-family: Gilroy-ExtraBold, Arial, sans-serif;
+  font-family: Gilroy, Arial, sans-serif;
   letter-spacing: 0.18px;
 }
 
@@ -173,7 +172,7 @@ img {
   font-weight: 800;
   font-size: 18px;
   line-height: 24px;
-  font-family: Gilroy-ExtraBold, Arial, sans-serif;
+  font-family: Gilroy, Arial, sans-serif;
   color: #000000;
   letter-spacing: 3.6px;
   border-right: 7px solid #000000;
@@ -190,12 +189,12 @@ img {
   background-color: #000000;
 }
 
-.services-list button:hover:not (.current-button) {
+.services-list button:hover:not(.current-button) {
   background-color: #f0c52e;
 }
 
-.services-list li:active:not (.current-item),
-.services-list button:active:not (.current-button) {
+.services-list li:active:not(.current-item),
+.services-list button:active:not(.current-button) {
   color: #f7e184;
   background-color: #000000;
 }
@@ -204,7 +203,7 @@ img {
   font-weight: 800;
   font-size: 47px;
   line-height: 48px;
-  font-family: Gilroy-ExtraBold, Arial, sans-serif;
+  font-family: Gilroy, Arial, sans-serif;
   color: #000000;
   letter-spacing: 0.47px;
 }
@@ -218,7 +217,7 @@ img {
   font-weight: 800;
   font-size: 47px;
   line-height: 48px;
-  font-family: Gilroy-ExtraBold, Arial, sans-serif;
+  font-family: Gilroy, Arial, sans-serif;
   color: #000000;
   letter-spacing: 0.47px;
 }
@@ -237,7 +236,7 @@ img {
   font-weight: 800;
   font-size: 18px;
   line-height: 24px;
-  font-family: Gilroy-ExtraBold, Arial, sans-serif;
+  font-family: Gilroy, Arial, sans-serif;
   color: #000000;
   text-transform: uppercase;
   letter-spacing: 3.6px;
@@ -247,10 +246,8 @@ img {
   background-color: #f0c52e;
 }
 
-.company-info a:active,
-.company-info .button:active {
+.company-info a:active, {
   color: rgba(0, 0, 0, 0.3);
-  background-color: #f0c52e;
 }
 
 .main-footer {
@@ -282,7 +279,7 @@ img {
   font-weight: 800;
   font-size: 18px;
   line-height: 24px;
-  font-family: Gilroy-ExtraBold, Arial, sans-serif;
+  font-family: Gilroy, Arial, sans-serif;
   text-align: center;
   text-transform: uppercase;
   letter-spacing: 3.6px;
@@ -316,7 +313,7 @@ img {
   font-weight: 700;
   font-size: 18px;
   line-height: 24px;
-  font-family: Gilroy-ExtraBold, Arial, sans-serif;
+  font-family: Gilroy, Arial, sans-serif;
   background-color: #ffffff;
 }
 
@@ -343,16 +340,11 @@ img {
   outline: none;
 }
 
-/*.modal-contact-form textarea:invalid,
-.modal-contact-form input:invalid {
-  background-color: #f6dada;
-}*/
-
 .modal-contact-form .button {
   font-weight: 800;
   font-size: 18px;
   line-height: 24px;
-  font-family: Gilroy-ExtraBold, Arial, sans-serif;
+  font-family: Gilroy, Arial, sans-serif;
   color: #000000;
   text-transform: uppercase;
   letter-spacing: 3.6px;
@@ -365,14 +357,13 @@ img {
 
 .modal-contact-form .button:active {
   color: rgba(0, 0, 0, 0.3);
-  background-color: #f0c52e;
 }
 
 .container h1:not(.visually-hidden) {
   font-weight: 800;
   font-size: 47px;
   line-height: 48px;
-  font-family: Gilroy-ExtraBold, Arial, sans-serif;
+  font-family: Gilroy, Arial, sans-serif;
   color: #000000;
   letter-spacing: 0.47px;
 }
@@ -391,7 +382,7 @@ img {
   font-size: 14px;
   line-height: 40px;
   letter-spacing: 0.14px;
-  font-family: OpenSans-Light, Arial, sans-serif;
+  font-family: OpenSans, Arial, sans-serif;
   color: rgba(0, 0, 0, 0.3);
   background-color: transparent;
 }
@@ -404,7 +395,7 @@ img {
   font-weight: 800;
   font-size: 16px;
   line-height: 24px;
-  font-family: Gilroy-ExtraBold, Arial, sans-serif;
+  font-family: Gilroy, Arial, sans-serif;
   color: #000000;
   text-transform: uppercase;
   letter-spacing: 3.2px;
@@ -415,7 +406,7 @@ img {
   font-weight: 800;
   font-size: 18px;
   line-height: 24px;
-  font-family: Gilroy-ExtraBold, Arial, sans-serif;
+  font-family: Gilroy, Arial, sans-serif;
   color: #000000;
   letter-spacing: 0.18px;
   background-color: transparent;
@@ -426,7 +417,7 @@ img {
   font-size: 14px;
   line-height: 40px;
   letter-spacing: 0.14px;
-  font-family: OpenSans-Light, Arial, sans-serif;
+  font-family: OpenSans, Arial, sans-serif;
   color: #000000;
   background-color: transparent;
 }
@@ -436,7 +427,7 @@ img {
   font-weight: 800;
   font-size: 18px;
   line-height: 24px;
-  font-family: Gilroy-ExtraBold, Arial, sans-serif;
+  font-family: Gilroy, Arial, sans-serif;
   color: #000000;
   text-transform: uppercase;
   letter-spacing: 3.6px;
@@ -451,14 +442,13 @@ img {
 
 .filter-form .button:active {
   color: rgba(0, 0, 0, 0.3);
-  background-color: #f0c52e;
 }
 
 .catalog-item h3 {
   font-weight: 800;
   font-size: 18px;
   line-height: 24px;
-  font-family: Gilroy-ExtraBold, Arial, sans-serif;
+  font-family: Gilroy, Arial, sans-serif;
   color: #000000;
   letter-spacing: 0.18px;
   background-color: transparent;
@@ -477,7 +467,7 @@ a.catalog-item-compare {
   font-size: 13px;
   line-height: 20px;
   letter-spacing: 0.13px;
-  font-family: OpenSans-Light, Arial, sans-serif;
+  font-family: OpenSans, Arial, sans-serif;
   color: rgba(0, 0, 0, 0.5);
   background-color: transparent;
 }
@@ -487,7 +477,7 @@ a.catalog-item-compare {
   font-size: 16px;
   line-height: 24px;
   letter-spacing: 0.16px;
-  font-family: OpenSans-Light, Arial, sans-serif;
+  font-family: OpenSans, Arial, sans-serif;
   color: #464646;
   background-color: transparent;
 }
@@ -496,7 +486,7 @@ a.catalog-item-compare {
   font-weight: 800;
   font-size: 16px;
   line-height: 24px;
-  font-family: Gilroy-ExtraBold, Arial, sans-serif;
+  font-family: Gilroy, Arial, sans-serif;
   letter-spacing: 3.2px;
   background-color: #ebebeb;
 }
@@ -520,9 +510,6 @@ a.catalog-item-compare {
   background-color: #d9d9d9;
 }
 
-.pagination-button:active,
 .pagination-button a:active {
   color: rgba(0, 0, 0, 0.3);
-  background-color: #d9d9d9;
 }
-
