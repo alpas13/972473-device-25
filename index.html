@@ -8,7 +8,7 @@
 </head>
 <body>
 <header class="main-header">
-  <div class="main-wrapper">
+  <div class="container-wrapper">
     <nav class="main-navigation">
       <a class="logo" aria-label="Интернет магазин «Device»">
         <img src="img/device.svg" width="163" height="35" alt="Логотип интернет магазина «Device»">
@@ -18,10 +18,9 @@
           <li class="site-search-placeholder">Поиск по сайту</li>
           <li>
             <form action="https://echo.htmlacademy.ru" method="get" class="site-search-form" name="search-form">
-              <label for="search-form-field">Поиск по сайту</label>
+              <label class="visually-hidden" for="search-form-field">Поиск по сайту</label>
               <input type="search" class="site-search-form-field" name="search-field" id="search-form-field"
-                     placeholder="Поиск по сайту">
-              <button type="submit" class="search-button">Найти</button>
+                     placeholder="Поиск по сайту"><button type="submit" class="search-button">Найти</button>
             </form>
           </li>
         </ul>
@@ -203,7 +202,7 @@
   </div>
 </main>
 <footer class="main-footer">
-  <div class="main-footer-wrapper">
+  <div class="container-wrapper">
     <div class="footer-top-wrapper">
       <a class="footer-logo">
         <img src="img/device.svg" width="163" height="35" alt="Логотип интернет магазина «Device»">
@@ -236,7 +235,7 @@
     </div>
   </div>
 </footer>
-<section class="modal-contact-form">
+<section class="modal contact-form">
   <h2 class="visually-hidden">Контактная форма</h2>
   <form action="https://echo.htmlacademy.ru" class="contact-form" method="post" name="contact-form">
     <p>
