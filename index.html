@@ -16,11 +16,12 @@
       <div class="search-user-wrapper">
         <ul class="site-search">
           <li class="site-search-placeholder">Поиск по сайту</li>
-          <li>
+          <li class="search-form">
             <form action="https://echo.htmlacademy.ru" method="get" class="site-search-form" name="search-form">
               <label class="visually-hidden" for="search-form-field">Поиск по сайту</label>
               <input type="search" class="site-search-form-field" name="search-field" id="search-form-field"
-                     placeholder="Поиск по сайту"><button type="submit" class="search-button">Найти</button>
+                     placeholder="Поиск по сайту">
+              <button type="submit" class="search-button">Найти</button>
             </form>
           </li>
         </ul>
@@ -33,19 +34,25 @@
       <ul class="site-navigation">
         <li class="navigation-catalog">
           <a class="navigation-catalog-title" href="#">Каталог товаров</a>
-          <ul class="navigation-catalog-list">
-            <li><a href="#">Виртуальная реальность</a></li>
-            <li><a href="catalog.html">Моноподы для селфи</a></li>
-            <li><a href="#">Экшн-камеры</a></li>
-            <li><a href="#">Фитнес-браслеты</a></li>
-            <li><a href="#">Умные часы</a></li>
-            <li><a href="#">Квадрокоптеры</a></li>
-          </ul>
         </li>
         <li class="navigation-delivery"><a href="#">Доставка</a></li>
         <li class="navigation-warranty"><a href="#">Гарантия</a></li>
         <li class="navigation-contacts"><a href="#">Контакты</a></li>
       </ul>
+      <section class="catalog-submenu">
+        <ul class="submenu-list">
+          <li><a href="#">Виртуальная реальность</a></li>
+          <li><a href="catalog.html">Моноподы для селфи</a></li>
+          <li><a href="#">Экшн-камеры</a></li>
+        </ul>
+        <ul class="submenu-list">
+          <li><a href="#">Фитнес-браслеты</a></li>
+          <li><a href="#">Умные часы</a></li>
+        </ul>
+        <ul class="submenu-list">
+          <li><a href="#">Квадрокоптеры</a></li>
+        </ul>
+      </section>
     </nav>
   </div>
 </header>
@@ -114,13 +121,13 @@
       <h2 class="visually-hidden">Сервисы</h2>
       <ul class="services-list">
         <li class="current-item">
-          <button type="button" class="button-delivery current-button">Доставка</button>
+          <button type="button" class="button-delivery current-button button">Доставка</button>
         </li>
         <li>
-          <button type="button" class="button-warranty">Гарантия</button>
+          <button type="button" class="button-warranty button">Гарантия</button>
         </li>
         <li>
-          <button type="button" class="button-credit">Кредит</button>
+          <button type="button" class="button-credit button">Кредит</button>
         </li>
       </ul>
       <ul class="services-description">
@@ -204,8 +211,10 @@
 <footer class="main-footer">
   <div class="container-wrapper">
     <div class="footer-top-wrapper">
-      <a class="footer-logo">
-        <img src="img/device.svg" width="163" height="35" alt="Логотип интернет магазина «Device»">
+      <a class="footer-logo"><span class="visually-hidden">Логотип интернет магазина «Device»</span>
+        <svg xmlns="http://www.w3.org/2000/svg" width="163" height="35" viewBox="0 0 163 35">
+          <path id="_-e-logo" d="M-.151.702v33.6h13.532a15.72 15.72 0 0 0 11.72-4.824 16.458 16.458 0 0 0 4.712-11.976 16.458 16.458 0 0 0-4.712-11.976A15.723 15.723 0 0 0 13.381.702H-.151zM7.582 26.91V8.091h5.8a8.646 8.646 0 0 1 6.5 2.568 9.407 9.407 0 0 1 2.489 6.84 9.406 9.406 0 0 1-2.489 6.84 8.642 8.642 0 0 1-6.5 2.568h-5.8zm34.8-5.952h12.082v-7.3H42.378V8.091h13.291V.702H34.645v33.6H55.91V26.91H42.378v-5.952zm36.343 13.344L89.744.702h-8.458l-7.491 24.72L66.304.702h-8.457l11.019 33.6h9.859zm14.4 0h7.733V.702h-7.733v33.6zm38.615-1.416a15.506 15.506 0 0 0 6.041-5.688l-6.67-3.84a7.482 7.482 0 0 1-3.165 3.024 9.87 9.87 0 0 1-4.664 1.1 9.595 9.595 0 0 1-7.177-2.736 9.909 9.909 0 0 1-2.682-7.248 9.909 9.909 0 0 1 2.682-7.248 9.595 9.595 0 0 1 7.177-2.736 9.897 9.897 0 0 1 4.639 1.08 7.592 7.592 0 0 1 3.19 3.048l6.67-3.84a15.873 15.873 0 0 0-6.09-5.688 17.42 17.42 0 0 0-8.409-2.088c-9.779-.272-17.797 7.691-17.591 17.472-.208 9.781 7.809 17.747 17.588 17.476a17.52 17.52 0 0 0 8.458-2.088zm17.881-11.928h12.082v-7.3h-12.085V8.091h13.29V.702h-21.023v33.6h21.265V26.91h-13.532v-5.952z" fill="#000000" data-name="-e-logo"/>
+        </svg>
       </a>
       <ul class="footer-user-menu">
         <li class="footer-login"><a href="#">Войти</a></li>
@@ -218,15 +227,15 @@
       <ul class="footer-navigation">
         <li><a href="#">Доставка</a></li>
         <li><a href="#">Гарантия</a></li>
-        <li><a href="#">Конакты</a></li>
+        <li><a href="#">Контакты</a></li>
       </ul>
       <p class="footer-phone"><a href="tel:+7 (495) 495-95-95">Тел.: +7 (495) 495-95-95</a></p>
     </div>
     <div class="footer-bottom-wrapper">
       <ul class="footer-social">
-        <li><a class="social-button" href="#">Фейсбук</a></li>
-        <li><a class="social-button" href="#">Инстаграм</a></li>
-        <li><a class="social-button" href="#">Твитер</a></li>
+        <li><a class="social-button" href="#"><span class="visually-hidden">Фейсбук</span><img src="img/fb.svg"  width="32" height="32" alt="Наша страничка на Фейсбуке"></a></li>
+        <li><a class="social-button" href="#"><span class="visually-hidden">Инстаграм</span><img src="img/inst.svg"  width="32" height="32" alt="Наша страничка в Инстаграм"></a></li>
+        <li><a class="social-button" href="#"><span class="visually-hidden">Твитер</span><img src="img/twit.svg"  width="32" height="32" alt="Мы в Твитере"></a></li>
       </ul>
       <a class="footer-copyright" href="https://htmlacademy.ru/intensive/htmlcss" target="_blank">
         <span class="visually-hidden">Перейти на сайт разработчика «HTML Academy»</span>
@@ -237,7 +246,8 @@
 </footer>
 <section class="modal contact-form">
   <h2 class="visually-hidden">Контактная форма</h2>
-  <form action="https://echo.htmlacademy.ru" class="contact-form" method="post" name="contact-form">
+  <form action="https://echo.htmlacademy.ru" class="contact-modal-form" method="post" name="contact-form">
+    <div class="contact-wrapper">
     <p>
       <label for="contact-form-name">Ваше имя:</label>
       <input type="text" name="form-name" id="contact-form-name" class="modal-contact-form-name" value=""
@@ -248,14 +258,15 @@
       <input type="email" name="form-email" id="contact-form-email" class="modal-contact-form-email" value=""
              placeholder="email@example.com" required>
     </p>
-    <p>
+    </div>
+    <p class="comment-area">
       <label for="contact-form-text">Текст письма:</label>
       <textarea name="form-text" id="contact-form-text" cols="60" rows="10" class="modal-contact-form-text"
                 placeholder="В свободной форме" required></textarea>
     </p>
     <button type="submit" class="button">Отправить</button>
   </form>
-  <button type="reset" class="modal-close">Закрыть</button>
+  <button type="reset" class="modal-close"><span class="visually-hidden">Закрыть</span></button>
 </section>
 <section class="modal modal-map">
   <h2 class="visually-hidden">Как до нас добраться</h2>
@@ -263,7 +274,7 @@
     <img src="img/map-big-jpg.jpg" width="960" height="559"
          alt="Офис компании по адресу: г. Москва, ул. Строителей, 15">
   </p>
-  <button type="button" class="modal-close">Закрыть</button>
+  <button type="reset" class="modal-close"><span class="visually-hidden">Закрыть</span></button>
 </section>
 </body>
 </html>
