@@ -324,7 +324,7 @@ img {
   display: inline-block;
   margin-top: 20px;
   margin-bottom: 9px;
-  vertical-align: center;
+  vertical-align: middle;
 }
 
 .logo:hover {
@@ -1227,6 +1227,7 @@ ul.submenu-list:last-child {
 
 .contact-form {
   display: inline-block;
+  vertical-align: middle;
   position: fixed;
   top: 50%;
   left: 50%;
