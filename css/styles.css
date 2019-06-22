@@ -396,9 +396,9 @@ img {
   transform: rotate(90deg);
 }
 
-.catalog-submenu {
+.catalog-submenu-wrapper {
   position: absolute;
-  display: none;
+  display: flex;
   width: 1160px;
   margin-top: -27px;
   margin-left: -60px;
@@ -406,6 +406,15 @@ img {
   padding-right: 60px;
   padding-bottom: 42px;
   background-color: #f7e196;
+  z-index: 2;
+}
+
+.submenu-show {
+  display: block;
+}
+
+.submenu-close {
+  display: none;
 }
 
 .submenu-list {
