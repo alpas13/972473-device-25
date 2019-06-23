@@ -65,7 +65,7 @@
         <li class="navigation-warranty"><a href="#">Гарантия</a></li>
         <li class="navigation-contacts"><a href="#">Контакты</a></li>
       </ul>
-      <section class="catalog-submenu submenu-close">
+      <section class="catalog-submenu">
         <h3 class="visually-hidden">Меню каталога товаров</h3>
         <div class="catalog-submenu-wrapper">
           <ul class="submenu-list">
@@ -308,5 +308,14 @@
     </div>
   </div>
 </footer>
+<script>
+  var submenuShowLink = document.querySelector('.navigation-catalog-title');
+  var submenu = document.querySelector('.catalog-submenu');
+
+  submenuShowLink.addEventListener('click', function (evt) {
+    evt.preventDefault();
+    submenu.classList.toggle('submenu-show');
+  });
+</script>
 </body>
 </html>

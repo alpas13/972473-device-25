@@ -62,7 +62,7 @@
         <li class="navigation-warranty"><a href="#">Гарантия</a></li>
         <li class="navigation-contacts"><a href="#">Контакты</a></li>
       </ul>
-      <section class="catalog-submenu submenu-close">
+      <section class="catalog-submenu">
         <h3 class="visually-hidden">Меню каталога товаров</h3>
         <div class="catalog-submenu-wrapper">
           <ul class="submenu-list">
@@ -332,7 +332,7 @@
         <p class="map-photo"><a href="https://yandex.ru/maps/-/CBFye-vHTC"><img src="img/map-jpg.jpg" width="560"
                                                                                 height="222" alt="Адрес на карте"></a>
         </p>
-        <a class="button" href="#">Напишите нам</a>
+        <a class="button contact-info-button" href="#">Напишите нам</a>
       </section>
     </div>
   </div>
@@ -416,18 +416,18 @@
       <p>
         <label for="contact-form-name">Ваше имя:</label>
         <input type="text" name="form-name" id="contact-form-name" class="modal-contact-form-name" value=""
-               placeholder="Имя Фамилия" required>
+               placeholder="Имя Фамилия">
       </p>
       <p>
         <label for="contact-form-email">Ваш email:</label>
         <input type="email" name="form-email" id="contact-form-email" class="modal-contact-form-email" value=""
-               placeholder="email@example.com" required>
+               placeholder="email@example.com">
       </p>
     </div>
     <p class="comment-area">
       <label for="contact-form-text">Текст письма:</label>
       <textarea name="form-text" id="contact-form-text" cols="60" rows="10" class="modal-contact-form-text"
-                placeholder="В свободной форме" required></textarea>
+                placeholder="В свободной форме"></textarea>
     </p>
     <button type="submit" class="button">Отправить</button>
   </form>
@@ -435,11 +435,15 @@
 </section>
 <section class="modal modal-map">
   <h2 class="visually-hidden">Как до нас добраться</h2>
+  <iframe
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2249.112374947353!2d37.52742931586162!3d55.68703400453005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54cf65f5c8955%3A0x694710ccd55501e!2sUlitsa+Stroiteley%2C+15%2C+Moskva%2C+Russland%2C+119311!5e0!3m2!1sde!2sde!4v1561291225226!5m2!1sde!2sde"
+    width="960" height="559" frameborder="0" style="border:0" allowfullscreen></iframe>
   <p>
     <img src="img/map-big-jpg.jpg" width="960" height="559"
          alt="Офис компании по адресу: г. Москва, ул. Строителей, 15">
   </p>
   <button type="reset" class="modal-close"><span class="visually-hidden">Закрыть</span></button>
 </section>
+<script src="js/script.js"></script>
 </body>
 </html>
