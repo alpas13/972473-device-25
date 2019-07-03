@@ -791,12 +791,11 @@ input#radio-slider-3:checked ~ .slider-3 {
   margin: 0;
 }
 
-.catalog-section-item div:hover {
+.catalog-section-item a:hover>div {
   background-color: rgba(240, 197, 46, 1);
 }
 
-.catalog-section-item div:active img,
-.catalog-section-item img:active {
+.catalog-section-item a:active {
   opacity: 0.3;
 }
 
